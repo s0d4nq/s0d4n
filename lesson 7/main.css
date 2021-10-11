@@ -54,3 +54,9 @@ h2{
     font-size: 25px;
     font-weight: bold;
 }
+.box:hover{
+    width: 200px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    transition: 0.2s;
+}
