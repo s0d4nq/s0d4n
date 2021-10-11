@@ -27,6 +27,11 @@ a:hover{
     margin-bottom: 20px;
     font-size: 20px;
 }
+.lessons{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .sprint1, .sprint2{
     width: 80%;
     margin: auto;
