@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+    <h1>Lesson 8. Images. Font Awesome. Basic Animation.</h1>
+    <div class="font">
+        <h2>Font Awesome + Transition</h2>
+        <div class="font-list">
+            <ul>
+                <li><i class="fas fa-check"></i>Marvel</li>
+                <li><i class="fas fa-spinner fa-pulse"></i>DC</li>
+                <li><i class="fas fa-square"></i>Star Wars</li>
+            </ul>
+        </div>
+        <p>Наведись на синий блок и узри магию <strong>transition</strong></p>
+    </div>
+    <div class="transform">
+        <h2>Transform</h2>
+        <div class="tr_block">
+            <div class="tr_element"></div>
+            <div class="tr_element"></div>
+            <div class="tr_element"></div>
+        </div>
+        <p><strong>Transform & Keyframes</strong> в дейстии</p>
+    </div>
+    <div class="css">
+        <h2>CSS Background</h2>
+        <div class="background"></div>
+        <p>Вставляем картинку через <strong>CSS</strong> свойство <strong>background</strong></p>
+    </div>
+    <div class="picture">
+        <h2>Images (HTML Picture)</h2>
+        <picture>
+            <source media="(min-width:1360px)" srcset="./img/marvel.jpg" type="image/jpg">
+            <source media="(min-width:960px)" srcset="./img/dc.jpg" type="image/jpg">
+            <source media="(min-width:550px)" srcset="./img/sw.jpg" type="image/jpg">
+            <img src="./img/marvel.jpg" alt="">
+        </picture>
+        <p>Использование тега picture для нужной картинки на нужном разрешении</p>
+        <p>Открой эту страницу на разных устройствах и посмотри результат</p>
+    </div>
+    <div class="ofset">
+        <h2>Universes (HTML object-fit)</h2>
+        <div class="blocks">
+            <div class="ofset_block">
+                <img src="./img/sw.jpg" alt="">
+                <p>Здесь кроется картинка 1920х800</p>
+            </div>
+            <div class="ofset_block">
+                <img src="./img/dc.jpg" alt="">
+                <p>Здесь кроется картинка 960х500</p>
+            </div>
+            <div class="ofset_block">
+                <img src="./img/marvel.jpg" alt="">
+                <p>Здесь кроется картинка 1920х1035</p>
+            </div>
+        </div>
+    </div>
+    <div class="universes">
+        <h2>Universes in row</h2>
+        <div class="universe">
+            <img src="./img/marvel.jpg" alt="">
+            <h2>Marvel</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet maxime fugit temporibus inventore delectus. Nihil non in ab quos magnam? Nostrum ab dolores obcaecati asperiores, atque id. Nihil, eum veritatis!</p>
+        </div>
+        <div class="universe">
+            <img src="./img/dc.jpg" alt="">
+            <h2>DC</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae ullam aliquid odio itaque ut explicabo voluptatibus eius non earum, minus cum quas rerum at. Porro amet distinctio commodi dignissimos?</p>
+        </div>
+        <div class="universe">
+            <img src="./img/sw.jpg" alt="">
+            <h2>Star Wars</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam aliquid, voluptatum corporis, quam ea nam quo libero ab nulla quas ducimus ex fuga odio, adipisci cum eum. Numquam, earum?</p>
+        </div>
+    </div>
+</body>
+</html>
