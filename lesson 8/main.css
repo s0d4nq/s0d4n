@@ -105,4 +105,29 @@ li{
 }
 .universes{
     margin: 20px 0;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.muniverse{
+    display: flex;
+    flex-direction: row;
+}
+.universeimg img{
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+	top: 0;
+	left: 0;
+}
+.muniverse{
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+    margin-bottom: 20px;
+}
+.muniverse .universep{
+    margin-left: 15px;
 }
