@@ -52,10 +52,10 @@ h1{
     padding: 20px 40px;
     border: 2px solid white;
     text-transform: uppercase;
+    transition: background 0.3s;
 }
 .btn:hover{
     background: #fff;
     color: black;
-    font-size: 18px;
-    transition: 0.5s;
+    transition: 0.6s
 }

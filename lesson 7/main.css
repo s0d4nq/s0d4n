@@ -39,6 +39,7 @@ h2{
     height: 150px;
     background: #000;
     margin-top: 50px;
+    transition: all 0.1s;
 }
 .boxes{
     display: flex;
@@ -53,6 +54,7 @@ h2{
 .text:hover{
     font-size: 25px;
     font-weight: bold;
+    transition: 0.2s;
 }
 .box:hover{
     width: 200px;
