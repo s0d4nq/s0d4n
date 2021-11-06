@@ -1,61 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-h1, p{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(245, 246, 246);
+    color: rgb(19, 18, 18);
+
+    font-size: 16px;
+    font-weight: normal;
     font-family: 'Montserrat', sans-serif;
 }
-a{
+h1, h2, p {
+    text-align: center;
+
+    margin: 10px 0;
+}
+h2 {
+    text-align: left;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+}
+h3 {
+    margin: 0 10px;
+}
+.wrapper {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+}
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(245, 246, 246);
+    position: sticky;
+    top: 0px;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+
+    margin: 0 auto;
+}
+input {
+    height: 0;
+}
+input::before {
+    content: "";
+    position: fixed;
+    background: url("../img/vader.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    top: 40px;
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    z-index: 100;
+  }
+input:checked + .wrapper {
+    background-color: black;
+    color: #fff;
+  }
+
+input:checked + .wrapper .header {
+    background-color: black;
+}
+
+input:checked + .wrapper span {
+    color: rgba(30,183,208,0.97);
+}
+
+input:checked + .wrapper .nav-inner {
+    background: #16181d;
+} 
+
+input:checked + .wrapper .nav-lesson {
+    background: #16181d;
+} 
+
+input:checked + .wrapper .saber-card {
+    display: block;
+} 
+  
+input:checked::before {
+    background-color: #fff;
+}
+.btn {
     display: inline-block;
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-top: 5px;
-    font-size: 14px;
-    padding: 10px 10px;
+    text-align: center;
+    line-height: 29px;
+    width: 96px;
+    height: 31px;
+    border-radius: 4px;
+    border: 1px solid #02b3e4;
+    background-color: white;
+    color: rgb(47, 49, 54);
+    font-weight: bold;
 }
-a:hover{
-    border: 1px solid lime;
-    transition: 0.2s;
+.btn:hover {
+    border-color: #148BB1;
+    box-shadow: 1px 2px 10px  #C8C8C8;
 }
-.card{
-    color: rgba(0,0,0,0.3);
-    float: right;
-    margin-right: 20px;
-}
-.sprint{
+.nav-inner {
+    width: 100%;
     margin-bottom: 20px;
-    font-size: 20px;
-}
-.lessons{
-    display:flex;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
-.sprint1, .sprint2{
-    width: 80%;
-    margin: auto;
-    height: 500px;
-    background: white;
-    border-radius: 15px;
-    margin-bottom: 50px;
-    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+.nav-inner:hover {
+    background-color: rgb(232, 243, 231);
 }
-.sprint2:hover{
-    transition: 0.5s;
-    background: rgba(236, 131, 131, 0.3);
+.nav-title {
+    width: 100%;
 }
-.sprint1:hover{
-    transition: 0.5s;
-    background: rgba(118, 207, 140, 0.3);
+.second:hover {
+    background-color: rgb(223, 230, 240);
 }
-.lesson{
-    width: 20%;
-    height: 150px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-    display: inline-block;
+.nav-lesson {
+    width: 270px;
+    height: 135px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 6px 25px #d0d0d0;
+}
+.nav-lesson-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-lesson-head i {
+    font-size: 18px;
+}
+.nav-lesson:hover {
+    box-shadow: 2px 4px 6px #d0d0d0;
+}
+.nav-lesson-inner {
+    width: 250px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid rgb(221, 214, 214);
+}
+.lesson-card-descr {
+    color: rgb(59, 59, 161);
     margin-left: 50px;
-    margin-bottom: 50px;
-    background:whitesmoke;
+}
+.disabled {
+    position: relative;
+}
+.disabled::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
