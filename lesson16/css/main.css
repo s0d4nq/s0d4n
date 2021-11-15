@@ -1,0 +1,11 @@
+.label-top{
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: purple;
+}
+.label-top>a{
+	text-decoration: none;
+	color: #fff;
+	padding: 4px;
+}
