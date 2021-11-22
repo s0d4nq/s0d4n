@@ -8,3 +8,7 @@ li::before, li::after{
 .uk-flex-1{
     margin-top: 15px;
 }
+img{
+    width: 30px;
+    height: 30px;
+}
