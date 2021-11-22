@@ -1,0 +1,10 @@
+.user-group{
+    list-style-type: none;
+    display: flex;
+}
+li::before, li::after{
+    content: none;
+}
+.uk-flex-1{
+    margin-top: 15px;
+}
