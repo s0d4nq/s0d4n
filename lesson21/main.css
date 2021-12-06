@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 40px;
+    height: 100vh;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list{
+    display: flex;
+}
+.nav__list li{
+    margin-right: 66px;
+    list-style-type: none;
+}
+.nav__list li:last-child{
+    margin-right: 0;
+}
+.nav__list a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 71px;
+    align-items: center;
+}
+.wrapper__text{
+    max-width: 500px;
+}
+.wrapper__text h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+}
+.wrapper__p{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+}
+.btn{
+    background: #000;
+    border: 0;
+    border-radius: 5px;
+    padding: 26px 100px;
+    color: white;
+    display: flex;   
+}
+.btn__p{
+    position: relative;
+    left: -120px;
+    top: 10px;
+    font-size: 24px;
+}
+.about__me{
+    background: #616161;
+    color: #fff;
+    padding: 80px 0 100px;
+    text-align: center;
+    font-family: Montserrat;
+}
+.section__headline{
+   font-size: 36px;
+   line-height: 140%;
+}
+.about__text{
+    font-size: 24px;
+    line-height: 140%;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 560px;
+}
+.skills{
+    padding: 80px 0 120px;
+    font-family: Montserrat;
+}
+.skills h2{
+    text-align: center;
+}
+.skills__box{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.skill__card{
+    text-align: center;
+    max-width: 370px;
+}
+.card__title{
+    margin: 39px 0;
+    font-size: 30px;
+    line-height: 140%;
+}
+.card__text{
+    font-size: 18px;
+    line-height: 140%;
+}
