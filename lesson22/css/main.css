@@ -10,7 +10,7 @@
     width: 100%;
 }
 .header{
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 .header__menu{
@@ -18,18 +18,20 @@
     padding-right: 50px;
     padding-top: 17px;
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid grey;
     padding-bottom: 20px;
 }
 .logo{
-    padding-right: 27px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-right: 1px solid grey;
 }
 .language{
     display: flex;
     flex-direction: column;
     padding-left: 26px;
-    padding-right: 32px;
+    padding-right: 100px;
     border-right: 1px solid grey ;
 }
 .language-ua, .language-ru{
@@ -50,16 +52,16 @@
 }
 .value{
     font-family: 'Questrial', sans-serif;
-    padding: 0 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-right:1px solid grey;
+    padding-right: 60px;
 }
 .social{
     padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
+    padding-right: 80px;
+    padding-top: 30px;
     border-right: 1px solid grey;
 }
 .social-icon{
@@ -71,7 +73,7 @@
 }
 .contacts{
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 70px;
     display: flex;
     border-right: 1px solid grey;
 }
@@ -94,6 +96,7 @@
 .search{
     display: flex;
     padding-left: 35px;
+    margin-right: 50px;
 }
 .maistra-online{
     display: flex;
@@ -145,6 +148,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 1340px;
+    margin-left: 250px;
 }
 .nav div{
     display: flex;
@@ -174,7 +178,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 .main__img{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(../img/maxresdefault.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(../img/maxresdefault.jpg), no-repeat;
+    background-size: 100%;
     height: 490px;
 }
 .img-text{
@@ -262,11 +267,12 @@
     margin-left: 10px;
 }
 .top-hotels{
-    height: 185px;
+    height: 700px;
 }
 .hotels-headline{
     font-family: 'Montserrat';
     position: relative;
+    font-size: 45px;
     top: 93px;
     left: 198px;
 }
@@ -296,22 +302,24 @@
     background: #000;
     position: relative;
     left: 784px;
-    top: 25px;
+    top: 30px;
 }
 .all-hotels{
-    padding: 10px;
+    width: 140px;
+    height: 45px;
     border: 1px solid grey;
     background: #fff;
     position: relative;
-    left: 1200px;
-    top: 10px;
+    left: 1310px;
+    top: 15px;
+    color: grey;
 }
 .hotels-menu{
     margin-bottom: 100px;
 }
 .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .card{
     background: rgba(0,0,0,0.1);
@@ -352,4 +360,211 @@
 }
 .third-card{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url(../img/third-card.png);
+}
+.active_line{
+    position: relative;
+    width: 400px;
+    height: 1px;
+    background: #000;
+    top: 80px;
+    left: 800px;
+}
+.active_btn{
+    width: 140px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 1300px;
+    background: #fff;
+    border: 1px solid grey;
+    color: grey;
+    font-weight: bold;
+}
+.active_cards{
+    width: 1200px;
+    height: 800px;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+}
+.active_card{
+    width: 327px;
+    height: 480px;
+}
+.active_card-image{
+    width: 327px;
+    height: 250px;
+}
+.active_card .location{
+    top: 80px;
+}
+.first-active-card .active_card-image{
+    background: url(../img/first-active-card.png);
+}
+.second-active-card .active_card-image{
+    background: url(../img/second-active-card.png);
+}
+.third-active-card .active_card-image{
+    background: url(../img/third-active-card.png);
+}
+.active-card-description{
+    height: 230px;
+    background: rgba(0, 0, 0, 0.01);
+}
+.active-card-descr-name{
+    font-size: 26px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: 'Montserrat';
+}
+.active-card-descr-p{
+    color: grey;
+    margin-top: 29px;
+    width: 250px;
+    height: 42px;
+    margin-left: 20px;
+    font-family: 'Montserrat';
+}
+.descr-line{
+    width: 280px;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.active-price{
+    color: red;
+    font-family: 'Montserrat';
+    margin-left: 20px;
+    margin-top: 26px;
+    width: 200px;
+}
+.active-price span{
+    font-size: 24px;
+}
+.active-time{
+    color: grey;
+    margin-top: 5px;
+}
+.time-range{
+    position: relative;
+    top: -50px;
+    left: 200px;
+    font-size: 12px;
+}
+.first-active-card .active-card-description, .second-active-card .active-card-description{
+    margin-top: 25px;
+}
+.active-tours-search{
+    position: relative;
+    left: 250px;
+    display: flex;  
+}
+.search-line{
+    width: 1342px;
+    height: 6px;
+    background: grey;
+}
+.compass{
+    background: url(../img/compass.png);
+    width: 16px;
+    height: 16px;
+}
+.gps{
+    background: url(../img/gps.png);
+    width: 16px;
+    height: 16px;
+}
+.calendar{
+    background: url(../img/calendar.png);
+    width: 16px;
+    height: 16px;
+}
+.user{
+    background: url(../img/user.png);
+    width: 16px;
+    height: 16px;
+}
+.clock{
+    background: url(../img/clock.png);
+    width: 16px;
+    height: 16px;
+}
+.search-descr{
+    display: flex;
+    color: grey;
+}
+.search-inputs{
+    display: flex;
+}
+.search-inputs p, .search-inputs input{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+}
+.from-input{
+    width: 150px;
+    padding-left: 15px;
+}
+.where{
+    margin-left: 85px;
+}
+.where-input{
+    width: 200px;
+}
+.where-input::placeholder{
+    position: relative;
+    left: 15px;
+}
+.when{
+    margin-left: 100px;
+}
+.when-input{
+    width: 240px;
+}
+.when-input::placeholder{
+    position: relative;
+    left: 15px;
+}
+.tourists{
+    margin-left: 145px
+}
+.tourists-input{
+    width: 200px;
+}
+.tourists-input::placeholder{
+    position: relative;
+    left: 15px;
+}
+.nights{
+    margin-left: 120px;
+}
+.nights-input{
+    width: 253px;
+}
+.nights-input::placeholder{
+    position: relative;
+    left: 15px;
+}
+.search-button{
+    width: 135px;
+    height: 50px;
+    background: #DD4053;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    right: 135px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat';
 }
