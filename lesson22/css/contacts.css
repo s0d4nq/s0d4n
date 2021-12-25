@@ -1,0 +1,232 @@
+.header__nav_tree{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.nav__tree{
+    display: flex;
+}
+
+.nav__tree a{
+    font-size: 15px;
+    line-height: 15px;
+    color: grey;
+    text-decoration: none;
+}
+
+.nav__tree li{
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+.nav__tree li:last-child a{
+    color: black;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact__content h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtext{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.contact_text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    }
+
+.contact_block{
+    margin-bottom: 20px;
+}
+
+.contact_text span{
+    font-weight: bold;
+}
+
+.contact__form input{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.contact__form input::placeholder{
+    padding-left: 20px;
+}
+
+.contact__form{
+    height: 460px;
+    background: #F8F8F8;
+    width: 500px;   
+}
+
+.contact__form h3{
+    text-align: center;
+    font-family: Montserrat;
+    padding-top: 40px;
+}
+
+form{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 370px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact__form button{
+    background: #DD4053;
+    border-radius: 2px;
+    width: 370px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    border: 0;
+}
+
+.contact__info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.map_location{
+    background: url(../img/map.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.team{
+    margin-top: 200px;
+}
+
+.team h2{
+    float: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #232323;
+    margin-bottom: 20px;
+}
+
+.team_list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 592px;
+    height: 16px;
+    float: right;
+    margin-right: 150px;
+}
+
+.team_list li{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000;
+    opacity: 0.35;
+}
+
+.team_list li:first-child{
+    color: #000000;
+    opacity: 1;
+}
+
+.team_card_zone{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid grey;
+    width: 89%;
+}
+
+.team__card{
+    display: flex;
+    margin-top: 40px;
+    border-bottom:2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    width: 500px;
+}
+
+.card__text{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1200px){
+    header{
+        display: none;
+    }
+    .container{
+        max-width: 70%;
+    }
+    .contact__info{
+        width: 100%;
+    }
+    .contact__form, .contact__content{
+        width: 970px;
+    }
+    .team__list li{
+        margin-left: 30px;
+    }    
+    .team__card{
+        width: 100%;
+        justify-content: center;
+    }
+    .contact__info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .team_list{
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    .contact__form{
+        margin: 0 auto;
+    }
+}

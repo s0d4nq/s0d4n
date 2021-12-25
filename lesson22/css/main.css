@@ -208,6 +208,9 @@
     transition: all;
     height: 42px;
 }
+.nav__item_selected{
+    border-bottom: 3px solid red;
+}
 .nav__item:hover{
     border-bottom: 3px solid red;
     transition: 0.05s;
