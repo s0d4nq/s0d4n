@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: hotpink;
+}
+.pop_up{
+    width: 300px;
+    height: 80px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid gray;
+    background: #555;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 50%;
+}
+
+.show__pop_up{
+    display: flex;
+}
+img{
+    width: 256px;
+}
+body{
+    display: flex;
+    align-items: flex-start;
+}
